@@ -1,0 +1,254 @@
+[
+  {
+    "name": "royal canin maxi adulto 15 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/21/royal-canin-maxi-adulto",
+    "price": 41900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/87678-pesaco-blanco-nutra-recuperado.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "brit brit adult small medium salmon 12 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1102/brit-brit-adult-small-medium-salmon",
+    "price": 48900,
+    "imageUrl": "https://tiendapet03.akamaized.net/assets/uploads/productos/5f02d-adult_salmon.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "brit brit adult small medium salmon 3 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1102/brit-brit-adult-small-medium-salmon",
+    "price": 17900,
+    "imageUrl": "https://tiendapet03.akamaized.net/assets/uploads/productos/5f02d-adult_salmon.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "eukanuba adulto large 15 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/101/eukanuba-adulto-large",
+    "price": 43900,
+    "imageUrl": "https://tiendapet03.akamaized.net/assets/uploads/productos/07465-euk-adult-lb-front.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "acana acana heritage free run poultry 11,35 Kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1279/acana-acana-heritage-free-run-poultry",
+    "price": 49900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/c8f99-ds_acana-free-run-poultry-fr-lg.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "acana acana heritage free run poultry 5,9 Kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1279/acana-acana-heritage-free-run-poultry",
+    "price": 30900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/c8f99-ds_acana-free-run-poultry-fr-lg.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "acana acana heritage free run poultry 2 Kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1279/acana-acana-heritage-free-run-poultry",
+    "price": 14900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/c8f99-ds_acana-free-run-poultry-fr-lg.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "proplan adulto complete 15 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/120/proplan-adulto-complete",
+    "price": 42900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/5e232-16.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "proplan adulto complete 3 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/120/proplan-adulto-complete",
+    "price": 14900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/5e232-16.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "proplan adulto large 15 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/121/proplan-adulto-large",
+    "price": 42900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/97652-21.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "eukanuba adulto medium 15 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/100/eukanuba-adulto-medium",
+    "price": 43900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/9ff4f-euk-adult-mb-front.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "eukanuba adulto medium 2,3 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/100/eukanuba-adulto-medium",
+    "price": 12900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/9ff4f-euk-adult-mb-front.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "taste of the wild pacific stream 13Kg",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1019/taste-of-the-wild-pacific-stream",
+    "price": 49900,
+    "imageUrl": "https://tiendapet03.akamaized.net/assets/uploads/productos/2c5d7-pacific.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "taste of the wild pacific stream 6Kg",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1019/taste-of-the-wild-pacific-stream",
+    "price": 29900,
+    "imageUrl": "https://tiendapet03.akamaized.net/assets/uploads/productos/2c5d7-pacific.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "taste of the wild pacific stream 2Kg",
+    "url": "https://www.tiendapet.cl/catalogo/producto/1019/taste-of-the-wild-pacific-stream",
+    "price": 14900,
+    "imageUrl": "https://tiendapet03.akamaized.net/assets/uploads/productos/2c5d7-pacific.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "fit formula fit formula adulto 20 kg.",
+    "url": "https://www.tiendapet.cl/catalogo/producto/563/fit-formula-fit-formula-adulto",
+    "price": 26900,
+    "imageUrl": "https://tiendapet02.akamaized.net/assets/uploads/productos/67581-fit-formula.jpg",
+    "store": "Tienda Pet",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "ProPlan Puppy Small Breed",
+    "url": "https://www.pethappy.cl/proplan-puppy-small-breed",
+    "price": 15790,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/1208556/resize/189/189?1495031246",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Royal Canin Mini Adulto",
+    "url": "https://www.pethappy.cl/royal-canin-mini-adulto",
+    "price": 6390,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/295528/resize/189/189?1483113477",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Royal Canin Mini Junior",
+    "url": "https://www.pethappy.cl/royal-canin-mini-junior",
+    "price": 14190,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/139353/resize/189/189?1476285190",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Eukanuba Adult Small Breed",
+    "url": "https://www.pethappy.cl/eukanuba-adult-small-breed",
+    "price": 13190,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/1044613/resize/189/189?1487012710",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Eukanuba Puppy Medium Breed",
+    "url": "https://www.pethappy.cl/eukanuba-puppy-medium-breed",
+    "price": 11990,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/1044640/resize/189/189?1487013208",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Royal Canin Yorkshire Jr",
+    "url": "https://www.pethappy.cl/royal-canin-yorkshire-jr",
+    "price": 14690,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/182777/resize/189/189?1417030035",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Eukanuba Adulto Medium Breed",
+    "url": "https://www.pethappy.cl/eukanuba-adulto-medium-breed-1",
+    "price": 10990,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/1044171/resize/189/189?1486997275",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Eukanuba Puppy Large Breed",
+    "url": "https://www.pethappy.cl/eukanuba-puppy-large-breed-1",
+    "price": 11490,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/1044624/resize/189/189?1487012894",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Eukanuba Adulto Large Breed",
+    "url": "https://www.pethappy.cl/eukanuba-adulto-large-breed-1",
+    "price": 10390,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/1044631/resize/189/189?1487013001",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "ProPlan Adult OptiLife Small Breed",
+    "url": "https://www.pethappy.cl/proplan-adult-optilife-small-breed",
+    "price": 15900,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/613125/resize/189/189?1457625611",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "ProPlan Puppy OptiStart Large Breed",
+    "url": "https://www.pethappy.cl/proplan-puppy-optistart-large-breed",
+    "price": 15900,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/638448/resize/189/189?1458311389",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  },
+  {
+    "name": "Royal Canin Obesity",
+    "url": "https://www.pethappy.cl/royal-canin-obesity",
+    "price": 10900,
+    "imageUrl": "https://cdnx.jumpseller.com/pethappy/image/437167/resize/189/189?1440619829",
+    "store": "Pet Happy",
+    "category": "comida",
+    "animal": "perro"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "project-pets-crawlers-nodejs",
+  "version": "0.0.0",
+  "description": "Crawlers for project-pets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "crawler"
+  ],
+  "author": "javier gutierrez",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^4.8.0",
+    "firebase-admin": "^5.5.1",
+    "validator": "^9.2.0",
+    "x-ray": "^2.3.2"
+  }
+}
