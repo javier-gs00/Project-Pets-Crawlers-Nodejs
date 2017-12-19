@@ -110,3 +110,14 @@ exports.validation = {
         }
     }
 }
+
+// Message logs
+exports.messages = {
+    sequentialSuccess: function (count, store, animal, category) {
+        return console.log(`${count} products scraped from ${store} ${animal} ${category}`)
+    },
+    sequentialError: function (store, err) {
+        return console.log(`Error from sequentially executing ${store} crawlers`, err)
+    },
+    testMessage: (count, store) => console.log(`${count} products scraped from ${store}`)
+}

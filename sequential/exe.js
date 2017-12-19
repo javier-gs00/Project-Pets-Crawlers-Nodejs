@@ -2,8 +2,7 @@ const fs = require('fs')
 
 const quotes = require('../web_crawlers/_test_quotes').quotes
 const brainyquotes = require('../web_crawlers/_test_brainyquotes').brainyquotes
-// const tiendaPet = require('../web_crawlers/tienda_pet').tiendaPetCrawler
-// const petHappy = require('../web_crawlers/pet_happy.js').petHappyCrawler
+const utils = require('../tools/utils')
 
 executeMultipleCrawlers().then(data => {
     let counter = 0
@@ -22,26 +21,20 @@ executeMultipleCrawlers().then(data => {
 
 function executeMultipleCrawlers () {
     return new Promise ((resolve, reject) => {
-        let counter = 0
         let results = []
-        
+
         // Chain the execution of the crawlers
         quotes()
         .then(data => {
-            data.forEach(product => {
-                results.push(product)
-                counter++
-            })
-            console.log(`${counter} items scraped from quotes`)
+            results = data
+            utils.messages.testMessage(data.length, 'Quotes')
             return brainyquotes()
         })
         .then(data => {
-            counter = 0
             data.forEach(product => {
                 results.push(product)
-                counter++
             })
-            console.log(`${counter} items scraped from brainyquotes`)
+            utils.messages.testMessage(data.length, 'BrainyQuotes')
             resolve(results)
         })
         .catch(err => {

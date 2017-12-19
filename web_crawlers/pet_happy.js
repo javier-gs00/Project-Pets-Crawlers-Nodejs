@@ -55,10 +55,9 @@ exports.petHappyCrawler = (animal, category) => {
         } else if (animal == 'cat' && category == 'med') {
             urls.push(catMedUrl)
         } else if (animal == 'cat' && category == 'acc') {
-            urls.push(catAccUrl, catToysUrl)
+            urls.push(catAccUrl)
         } else if (animal == 'all' && category == 'all'){
-            urls.push(dogFoodUrl)
-            // urls.push(dogFoodUrl, dogMedUrl, dogAccUrl, dogToysUrl, catFoodUrl, catMedUrl, catAccUrl, catToysUrl)
+            urls.push(dogFoodUrl, dogMedUrl, dogAccUrl, catFoodUrl, catMedUrl, catAccUrl)
         }
     
         // Create an array containing the executed crawlers
@@ -81,6 +80,7 @@ exports.petHappyCrawler = (animal, category) => {
 }
 
 function webCrawler (url, animal, category) {
+    // set the time to be used for making resquest
     let time = utils.getRandom(2, 2)
     let x  = xray({
         filters: {
