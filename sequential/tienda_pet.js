@@ -3,15 +3,12 @@ const fs = require('fs')
 const tiendaPet = require('../web_crawlers/pet_happy').tiendaPetCrawler
 
 executeMultipleCrawlers().then(data => {
-    let counter = 0
-    data.forEach(element => {
-        counter += 1
-    })
-    console.log(`${counter} products scraped`)
+    const count = data.length
+    console.log(`${count} products scraped`)
     let json = JSON.stringify(data, null, 2)
     fs.writeFile('./logs/tienda_pet.json', json, (err) => {
         if (err) console.log('Error ocurred while saving to json')
-        console.log(`${counter} products saved to tienda_pet.json`)
+        console.log(`${count} products saved to tienda_pet.json`)
     })
 }).catch(err => {
     console.error('Error after executing multiple Tienda Pet crawlers', err)
@@ -19,29 +16,51 @@ executeMultipleCrawlers().then(data => {
 
 function executeMultipleCrawlers () {
     return new Promise ((resolve, reject) => {
-        let counter = 0
-        let results = []
-        
+        let results = []        
         // Chain the execution of the crawlers
         tiendaPet('dog', 'food')
         .then(data => {
+            results = data
+            utils.messages.sequentialSuccess(data.length, 'Tienda Pet', 'dog', 'food')
+            return tiendaPet('dog', 'med')
+        })
+        .then(data => {
             data.forEach(product => {
                 results.push(product)
-                counter++
             })
-            console.log(`${counter} products scraped from Tienda Pet`)
+            utils.messages.sequentialSuccess(data.length, 'Tienda Pet', 'dog', 'med')
+            return tiendaPet('dog', 'acc')
+        })
+        .then(data => {
+            data.forEach(product => {
+                results.push(product)
+            })
+            utils.messages.sequentialSuccess(data.length, 'Tienda Pet', 'dog', 'acc')
+            return tiendaPet('cat', 'food')
+        })
+        .then(data => {
+            data.forEach(product => {
+                results.push(product)
+            })
+            utils.messages.sequentialSuccess(data.length, 'Tienda Pet', 'cat', 'food')
+            return tiendaPet('cat', 'med')
+        })
+        .then(data => {
+            data.forEach(product => {
+                results.push(product)
+            })
+            utils.messages.sequentialSuccess(data.length, 'Tienda Pet', 'cat', 'med')
             return tiendaPet('cat', 'acc')
         })
         .then(data => {
-            counter = 0
             data.forEach(product => {
                 results.push(product)
-                counter++
             })
-            console.log(`${counter} products scraped from Tienda Pet`)
+            utils.messages.sequentialSuccess(data.length, 'Tienda Pet', 'cat', 'acc')
             resolve(results)
         })
         .catch(err => {
+            utils.messages.sequentialError('Tienda Pet', err)
             console.log('Error from sequentially executing the crawlers: ', err)
             reject(err)
         })

@@ -28,7 +28,11 @@ exports.quotes = () => {
 }
 
 function webCrawler (url) {
-    let x = xray()
+    let x = xray({
+        filters: {
+            getDate: () => utils.currentDateFormatted()
+        }
+    })
     .delay(utils.getRandom(2, 2))
     .concurrency(1)
     .throttle(1, utils.getRandom(2, 2))
@@ -36,7 +40,8 @@ function webCrawler (url) {
     return new Promise((resolve, reject) => {
         x(url, '.quote', [{
             text: '.text',
-            author: '.author'
+            author: '.author',
+            date: '| getDate'
         }])
         // .paginate('li.next a@href')
         .limit(1)

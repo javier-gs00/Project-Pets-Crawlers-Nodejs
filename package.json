@@ -13,8 +13,9 @@
   "author": "javier gutierrez",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^4.8.0",
+    "dotenv": "^4.0.0",
     "firebase-admin": "^5.5.1",
+    "mongoose": "^4.13.7",
     "validator": "^9.2.0",
     "x-ray": "^2.3.2"
   }

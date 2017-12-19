@@ -1,8 +1,5 @@
 const xray = require('x-ray')
 const utils = require('../tools/utils')
-// const timer = require('./_utils').timer
-// const parseName = require('./_utils').parseName
-// const parsePrice = require('./_utils').parsePrice
 
 exports.petHappyCrawler = (animal, category) => {
     return new Promise((resolve, reject) => {
@@ -98,7 +95,8 @@ function webCrawler (url, animal, category) {
             },
             animal: function () {
                 return animal
-            }
+            },
+            date: () => utils.currentDateFormatted()
         }
     })
     .delay(time)
@@ -117,9 +115,10 @@ function webCrawler (url, animal, category) {
                 url: 'a@href',
                 price: '.precio | parsePrice',
                 imageUrl: 'img@src',
-                store: 'h1 | storeName',
-                category: 'h1 | category',
-                animal: 'h1 | animal'
+                store: '| storeName',
+                category: '| category',
+                animal: '| animal',
+                date: '| date'
             }]
         )
         .paginate('li.next a@href') // Next page button .css classes

@@ -1,8 +1,5 @@
 const xray = require('x-ray')
 const utils = require('../tools/utils')
-const timer = require('./_utils').timer
-const parseName = require('./_utils').parseName
-const parsePrice = require('./_utils').parsePrice
 
 // returns an array of objects (products)
 exports.tiendaPetCrawler = (animal, category) => {
@@ -68,8 +65,7 @@ exports.tiendaPetCrawler = (animal, category) => {
         } else if (animal == 'cat' && category == 'acc') {
             urls.push(catAccUrl, catToysUrl)
         } else if (animal == 'all' && category == 'all'){
-            urls.push(dogFoodUrl, catFoodUrl)
-            // urls.push(dogFoodUrl, dogMedUrl, dogAccUrl, dogToysUrl, catFoodUrl, catMedUrl, catAccUrl, catToysUrl)
+            urls.push(dogFoodUrl, dogMedUrl, dogAccUrl, dogToysUrl, catFoodUrl, catMedUrl, catAccUrl, catToysUrl)
         }
     
         // Create an array containing the executed crawlers
@@ -110,7 +106,8 @@ function webCrawler (url, animal, category) {
             },
             animal: function () {
                 return animal
-            }
+            },
+            date: () => utils.currentDateFormatted()
         }
     })
     .delay(time)
@@ -130,11 +127,12 @@ function webCrawler (url, animal, category) {
                 imageUrl: 'img@src',
                 store: '| storeName',
                 category: '| category',
-                animal: '| animal'
+                animal: '| animal',
+                date: '| date'
             }]
         )
         .paginate('a.fa-chevron-right@href') // Next page button .css classes
-        .limit(1) // Pages to crawl limit
+        //.limit(1) // Pages to crawl limit
         ((err, data) => {
             if (err) {
                 console.log(`== Error executing Tienda Pet ${animal} ${category} web crawler`)

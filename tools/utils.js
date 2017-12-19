@@ -44,6 +44,30 @@ exports.timer = t0 => {
     return Math.round((t1[0]*1000 + (t1[1]/1000000)))
 }
 
+// Get current date
+exports.currentDate = () => new Date()
+
+// Get current date in the format YYYY/MM/DD
+exports.currentDateFormatted = () => {
+    let date = new Date();
+    // Get the day as a string in format: YYYY/MM/DD
+    let today = date.getFullYear() + '/' + (date.getMonth() + 1 ) + '/' + date.getDate();
+    return today;
+}
+
+// Check that the scraped data contains vaules for name, price and href
+exports.checkData = data => {
+    return new Promise(function (resolve, reject) {
+        data.forEach(function (product) {
+            if (product.name === '' || product.price === '' || product.url === '') {
+                const err = 'Incomplete scraped data';
+                reject(err);
+            }
+        })
+        resolve(data);
+    })
+}
+
 // Validation functions built on top of validator
 exports.validation = {
     length: function (input, min, max, errmsg) {
