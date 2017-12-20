@@ -14,8 +14,8 @@ db.on('error', console.error.bind(console, 'MongoDB connection error: '))
 const ProductSchema = new mongoose.Schema({
     name: String,
     price: Number,
-    href: String,
-    image_href: String,
+    url: String,
+    imageUrl: String,
     category: String,
     animal: { type: String, default: '' },
     store: String,

@@ -1,15 +1,24 @@
 const fs = require('fs')
 
 const tiendaPet = require('../web_crawlers/pet_happy').tiendaPetCrawler
+const utils = require('../tools/utils')
+const db = require('../database/mongodb')
 
 executeMultipleCrawlers().then(data => {
     const count = data.length
     console.log(`${count} products scraped`)
     let json = JSON.stringify(data, null, 2)
-    fs.writeFile('./logs/tienda_pet.json', json, (err) => {
-        if (err) console.log('Error ocurred while saving to json')
-        console.log(`${count} products saved to tienda_pet.json`)
+    db.writeBatch(data)
+    .then(docs => {
+        console.log(`Batch succesfull. ${docs.length} documents saved to MongoDB`)
     })
+    .catch(err => {
+        console.log('Error executing batch')
+    })
+    // fs.writeFile('./logs/tienda_pet.json', json, (err) => {
+    //     if (err) console.log('Error ocurred while saving to json')
+    //     console.log(`${count} products saved to tienda_pet.json`)
+    // })
 }).catch(err => {
     console.error('Error after executing multiple Tienda Pet crawlers', err)
 })

@@ -1,4 +1,8 @@
+// Module to test single web crawlers
+
 const dayMascotas = require('./web_crawlers/day_mascotas').dayMascotasCrawler
+const tiendaPet = require('./web_crawlers/tienda_pet').tiendaPetCrawler
+const petHappy = require('./web_crawlers/pet_happy').petHappyCrawler
 const fs = require('fs')
 const utils = require('./tools/utils')
 const db = require('./database/mongodb')
@@ -27,10 +31,10 @@ function executeMultipleCrawlers () {
         let results = []
 
         // Chain the execution of the crawlers
-        dayMascotas('dog', 'food')
+        petHappy('dog', 'med')
         .then(data => {
             results = data
-            utils.messages.testMessage(data.length, 'Day Mascotas')
+            utils.messages.testMessage(data.length, 'Test Store')
             resolve(results)
         })
         .catch(err => {

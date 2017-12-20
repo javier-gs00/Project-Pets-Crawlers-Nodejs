@@ -81,21 +81,12 @@ function webCrawler (url, animal, category) {
     let time = utils.getRandom(2, 2)
     let x  = xray({
         filters: {
-            parseName: function (value) {
-                return typeof value == 'string' ? utils.parseName(value) : value
-            },
-            parsePrice: function (value) {
-                return typeof value == 'string' ? utils.parsePrice(value) : value;
-            },
-            storeName: function () {
-                return 'Pet Happy'
-            },
-            category: function () {
-                return category
-            },
-            animal: function () {
-                return animal
-            },
+            parseName: value => typeof value == 'string' ? utils.parseName(value) : value,
+            parsePrice: value => typeof value == 'string' ? utils.parsePrice(value) : value,
+            parseUrl: value => typeof vallue == 'string' ? 'https://www.pethappy.cl' + value : value,
+            storeName: () => 'Pet Happy',
+            category: () => category,
+            animal: () => animal,
             date: () => utils.currentDateFormatted()
         }
     })
