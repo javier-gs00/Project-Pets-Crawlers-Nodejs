@@ -21,12 +21,12 @@ exports.tiendaPetCrawler = (animal, category) => {
         const dogAccUrl = {
             url: 'https://www.tiendapet.cl/catalogo/perro/accesorios/',
             animal: 'perro',
-            category: 'accesorios'
+            category: 'accesorio'
         }
         const dogToysUrl = {
             url: 'https://www.tiendapet.cl/catalogo/perro/juguetes/',
             animal: 'perro',
-            category: 'accesorios'
+            category: 'accesorio'
         }
         const catFoodUrl = {
             url: 'https://www.tiendapet.cl/catalogo/gato/alimentos/',
@@ -42,12 +42,12 @@ exports.tiendaPetCrawler = (animal, category) => {
         const catAccUrl = {
             url: 'https://www.tiendapet.cl/catalogo/gato/accesorios/',
             animal: 'gato',
-            category: 'accesorios'
+            category: 'accesorio'
         }
         const catToysUrl = {
             url: 'https://www.tiendapet.cl/catalogo/gato/juguetes/',
             animal: 'gato',
-            category: 'accesorios'
+            category: 'accesorio'
         }
         // scraped objects will be placed here
         let results = []
@@ -107,6 +107,7 @@ function webCrawler (url, animal, category) {
     return new Promise ((resolve, reject) => {
         let startTimer = utils.timer();
         // Init scraper
+        console.log(`Crawler started: Tienda Pet ${animal} ${category}`)
         x(
             url,
             'div.block-producto',
@@ -129,7 +130,7 @@ function webCrawler (url, animal, category) {
                 reject(err)
             } else {
                 let endTimer = utils.timer(startTimer)
-                console.log(`== Tienda Pet ${animal} ${category} web scraper completed in ${endTimer} + ms`)
+                console.log(`== Tienda Pet ${animal} ${category} web scraper completed in ${endTimer} ms`)
                 let products = handleTableData(data)
                 resolve(products)
             }

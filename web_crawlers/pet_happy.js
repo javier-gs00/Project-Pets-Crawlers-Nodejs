@@ -20,7 +20,7 @@ exports.petHappyCrawler = (animal, category) => {
         const dogAccUrl = {
             url: 'https://www.pethappy.cl/perros-2/accesorios',
             animal: 'perro',
-            category: 'accesorios'
+            category: 'accesorio'
         }
         const catFoodUrl = {
             url: 'https://www.pethappy.cl/gatos-2/alimentos',
@@ -36,7 +36,7 @@ exports.petHappyCrawler = (animal, category) => {
         const catAccUrl = {
             url: 'https://www.pethappy.cl/gatos-2/accesorios',
             animal: 'gato',
-            category: 'accesorios'
+            category: 'accesorio'
         }
         // scraped objects will be placed here
         let results = []

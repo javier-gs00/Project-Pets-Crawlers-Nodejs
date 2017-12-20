@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const tiendaPet = require('../web_crawlers/pet_happy').tiendaPetCrawler
+const tiendaPet = require('../web_crawlers/tienda_pet').tiendaPetCrawler
 const utils = require('../tools/utils')
 const db = require('../database/mongodb')
 

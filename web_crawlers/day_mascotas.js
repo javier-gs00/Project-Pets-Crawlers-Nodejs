@@ -25,7 +25,7 @@ exports.dayMascotasCrawler = (animal, category) => {
         const accUrl = {
             url: 'http://daymascotas.cl/categoria-producto/accesorios/',
             animal: '',
-            category: 'accesorios'
+            category: 'accesorio'
         }
         // scraped objects will be placed here
         let results = []
@@ -72,7 +72,7 @@ function webCrawler (url, animal, category) {
             rmHorarios: value => value === 'HORARIOS' ? value = '' : value,
             parseName: value => typeof value == 'string' ? utils.parseName(value) : value,
             parsePrice: value => typeof value == 'string' ? utils.parsePrice(value) : value,
-            storeName: () => 'Pet Happy',
+            storeName: () => 'Day Mascotas',
             category: () => category,
             animal: () => animal,
             date: () => utils.currentDateFormatted()
