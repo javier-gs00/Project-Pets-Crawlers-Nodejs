@@ -13,6 +13,7 @@
   "author": "javier gutierrez",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "dotenv": "^4.0.0",
     "firebase-admin": "^5.5.1",
     "mongoose": "^4.13.7",
