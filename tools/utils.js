@@ -55,7 +55,7 @@ exports.currentDateFormatted = () => {
     return today;
 }
 
-// Check that the scraped data contains vaules for name, price and href
+// Check that the scraped data contains values for name, price and href
 exports.checkData = data => {
     return new Promise(function (resolve, reject) {
         data.forEach(function (product) {
@@ -68,7 +68,7 @@ exports.checkData = data => {
     })
 }
 
-// Validation functions built on top of validator
+// Validation functions built on top of the validator module
 exports.validation = {
     length: function (input, min, max, errmsg) {
         if (validator.isLength(input, { min: min, max: max }) == false) {

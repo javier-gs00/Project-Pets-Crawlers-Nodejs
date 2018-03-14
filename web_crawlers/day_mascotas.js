@@ -64,6 +64,7 @@ exports.dayMascotasCrawler = (animal, category) => {
 function webCrawler (url, animal, category) {
     // set the time to be used for making resquest
     let time = utils.getRandom(2, 2)
+    // Create a instance of X-Ray to be used later
     let x  = xray({
         filters: {
             rmVisitanos: value => value === 'VISITANOS' ? value = '' : value,
@@ -84,7 +85,7 @@ function webCrawler (url, animal, category) {
 
     return new Promise ((resolve, reject) => {
         let startTimer = utils.timer();
-        // Init scraper
+        // Initialize scraper
         console.log(`Crawler started: Day Mascotas ${animal} ${category}`)
         x(
             url,
